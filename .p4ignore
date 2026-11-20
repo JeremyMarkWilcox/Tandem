@@ -1,0 +1,28 @@
+# Perforce ignore rules for Tandem (mirrors .gitignore)
+# If P4V doesn't pick this file up, run once:  p4 set P4IGNORE=.p4ignore
+
+# --- Unreal Engine: generated and cached files ---
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# --- IDE and solution files (regenerated from Tandem.uproject) ---
+.vs/
+.idea/
+*.sln
+*.slnx
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# --- Git metadata (this folder is also a Git repo) ---
+.git/
+
+# --- Licensed course art: fine to show in videos and use in games, not to redistribute ---
+# Back this folder up yourself for a new machine. Don't recopy the course originals: they point at the old /Game/Assets paths
+/Content/Vehicle/Vehicle/
